@@ -61,8 +61,8 @@ new RGBELoader()
 
 window.addEventListener("mousemove", (e) => {
   if(model) {
-    const rotationX = (e.clientX / window.innerWidth - .5) * Math.PI;
-    const rotationY = (e.clientY / window.innerHeight - .5) * Math.PI;
+    const rotationX = (e.clientX / window.innerWidth - .5) * (Math.PI * .25);
+    const rotationY = (e.clientY / window.innerHeight - .5) * (Math.PI * .25);
     // model.rotation.y = rotationX;
     // model.rotation.x = rotationY;\
     gsap.to(model.rotation, {
